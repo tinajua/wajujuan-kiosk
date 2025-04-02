@@ -1,0 +1,5 @@
+# Ignore cache, logs, system files
+.cache/
+node_modules/
+*.log
+.DS_Store
