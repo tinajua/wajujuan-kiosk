@@ -1,0 +1,24 @@
+/*----------- Intro Section ------------*/
+.intro {  
+    color: rgb(253, 139, 81);
+    background-color: rgb(32, 93, 105); 
+    margin: auto;
+    margin-top: 10%;   
+    width: 50%;    
+    height: 40vh;
+}
+
+/*----------- Projects Section ----------*/
+h1 {
+    margin: 0;
+    font-size: 50px;
+    color: rgb(253, 139, 81);
+}
+
+/* Be sure the #projects selector is outside h1 */
+#projects {
+    background-color: rgb(238, 221, 172);
+    display: block;
+    color: rgb(32, 93, 105);
+    font-size: 20px; /* removed space between 20 and px */
+}
