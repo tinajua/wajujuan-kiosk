@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <link rel='stylesheet' href="css/style.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Tony_JC's Pg</title>
 </head>
 <body>
-    <h1>Welcome to my GitHub Pages site!</h1>
+<form id="myForm">
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button type="submit">Submit</button>
+</form>					<!-- above is eg. of input to Enter name foll by 'Return' it gets handled below--> 
+<p id="result"></p>
+<div id="dtField"></div>
+    <script src="salimia.js"></script>  <!-- call for nimi for a pass that kutsua h:lön nimella, palauttaa tervehdyxen-->
+    <h1>Welcome to my GitHub Pages site!</h1> <!-- ennen paluuta tähän kursori tuottaa tervehd.tekstin ja riv.vaihdon -->
+    <div>      
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li style='float:left'><a class="active" href="#">Home</a></li>
+            <li>
+                <a href ="pages/experience.html">Experience</a>
+            </li>
+            <li>
+                <a href="pages/contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="pages/about.html">About</a>
+            </li>
+        </ul>
+    </div>
+<div class="container">
+        <div  class= 'Name_oPr1_and_other  Projects to follow..soon'>    
+            <h3>A simple HTML form</h3>    
+            <a href='./projects/projext/pr_file.html' target="_blank"><img src= 'assets/Inet_Lbasics.png' alt=""/></a>
+            <p id='cardFont'>I'll include form handling.. over basic HTML.</p>    
+        </div>
+    <div class="intro">
+        <h1>Tony_JS's</h1>
+        <p>Portfolio-pg is a creation of self-learnt front-end 'WebDevel'. Attended few classes to update skills (down the run: based on [*A prio Web2.0 CMS's, POST: call ext. .js using reference www.w3.schools.com/ and other]. If you have an idea for your website 
+           or a simple design, I shall see what can be done to accomplish it. Should you put your trust in my time'n'efforts for a given task, gladly will see with aid of AI, as codeable to get online such dynamic(s)!</p> 
+    </div>
+    <hr />
+    
+    <section id="projects">
+            
+    <div id='projectsIntro'><h2>My projects</h2>
+        <p> Here's a brief glimpse of 'look-a-like' projects, I could gather. These I consider having had at least grasped the code in them (initial idea of No-Need to Reinvent the Wheel w/ 'classes to tap in' ToDo seemingly simple things like drawing shapes on screen)<br />
+            Clicking on [ICON] should open content in browser tab.<br /> 
+            This entire site was build with HTML/CSS, and also an exercise of JavaScript (as underlying technical logic).
+        </p>
+    </div>
 </body>
 </html>
