@@ -1,2 +1,1 @@
-# juan-kiosk
-# juan-kiosk
+# JScode juju-kiosk
