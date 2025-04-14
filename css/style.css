@@ -1,6 +1,9 @@
 body {
   background-color: #57eb16
 }
+p {
+  margin-top: 0px; /* or even 0 */
+}
 /*----------- Intro Section ------------*/
 .intro {  
     color: rgb(253, 139, 81);
@@ -10,18 +13,76 @@ body {
     width: 50%;    
     height: 40vh;
 }
-
-/*----------- Projects Section ----------*/
+.consent-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+.consent-container i {
+  margin-right: 5px;
+  color: #333; /* compare & adjust to text elsewhere on pg */
+}
+.submit-section {
+  margin-bottom: 10px;
+}
 h1 {
+  font-family: sans-serif;
+  font-weight: normal; /* not bold */
+  color: #222; /* is Black, compare txt color in Project */
+  font-size: 14px; /* to 16 px or set even  smaller */
+}
+/*----------- Projects Section ----------*/
+h2 {
     margin: 0;
     font-size: 50px;
     color: rgb(253, 139, 81);
 }
-
+/* lays out all pages to list items horizontally, evenly spaced */
+ul {
+  display: flex;
+  list-style: none; /* removes bullets */
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  margin-right: 20px;
+}
+/* styles a Menu-icon chosen from FA bars class (for its check-box & text for the user's readable understanding */
+.checkbtn {
+  font-size: 14px;
+  color: #444; /* this is greyish color */
+  cursor: pointer;
+  user-select: none;
+}
+.checkbtn i {
+  font-size: 14px /* adjust icon size */
+  margin-right: 8px; /* spacing btwn icon & txt */
+}
 /* Be sure the #projects selector is outside h1 */
 #projects {
     background-color: rgb(238, 221, 172);
     display: block;
     color: rgb(32, 93, 105);
     font-size: 20px; /* removed space between 20 and px */
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* spacing between boxes */
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 0px; /* 👈 Add or reduce this value */
+  padding: 20px;
+}
+.projects-grid a img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.projects-grid a img:hover {
+  transform: scale(1.05);
 }
