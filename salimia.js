@@ -3,3 +3,4 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     let name = document.getElementById("nameInput").value;
     document.getElementById("result").innerText = "Hello, " + name + "!\n";
 });
+alert(window.navigator.userAgent);

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href=
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Tony_JC's Pg</title>
@@ -18,15 +18,16 @@
 <div class="consent-container">
   <input type="checkbox" id="check">
   <label for="check" class="checkbtn">
-    <i class="fas fa-arrow-left"></i> Click awareness of no names stored (optional, as this is by GDPR compliance)
+    <i class="fas fa-arrow-left"></i><span class="blue-text">Click</span> awareness of no names stored (optional, as this is by GDPR compliance)
   </label>
 </div><!-- input.button to EnterName (foll. by 'Ret/Click', gets handled in script -->
 
-<h3>Welcome to my GitHub Pages site!</h3><!-- ennen paluuta tähän kursori tuottaa tervehd.tekstin ja riv.vaihdon -->
+  <h3>Welcome to my GitHub Pages site!</h3><!--T.tuloa! Ennen paluuta tähän kursori tuottaa tervehd.tekstin ja riv.vaihdon -->
 </form> 
 <p id="result"></p>
+<!-- below deifined is a very basic Main Manu-->
 <div id="dtField"></div>
-    <script src="salimia.js"></script>  <!-- call for nimi for a pass that kutsua h:lön nimella, palauttaa tervehdyxen-->
+    <script src="salimia.js"></script>  <!-- call for nimi for a pass that then call [HiH:lön] name, returns "Tervehdys"/Greeting-->
     <div>
         <ul>
             <li><a class="active" href="#">Home</a></li>
@@ -44,31 +45,35 @@
 <div class="container">
         <div  class= <div class="project-name-container">
             <div class="projects-grid">
-            <a href="./assets/1.PNG"><img src="./assets/1.PNG" alt="Project 1" /></a>
-            <a href="./assets/2.PNG"><img src="./assets/2.PNG" alt="Project 2" /></a>
-            <a href="./assets/3.PNG"><img src="./assets/3.PNG" alt="Project 3" /></a>
-            <a href="./assets/4.PNG"><img src="./assets/4.PNG" alt="Project 4" /></a>
-            <a href="./assets/5.PNG"><img src="./assets/5.PNG" alt="Project 5" /></a>
-            <a href="./assets/6.PNG"><img src="./assets/6.PNG" alt="Project 6" /></a><!-- no need for more that 6 -->
+            <a href="./projects/projext1/index.html"><img src="./assets/1.png" alt="Project 1" style="border: 2px solid red; width: 200px;" /></a>
+            <a href="./projects/projext2/index.html"><img src="./assets/2.PNG" alt="Project 2" /></a>
+            <a href="./projects/projext3/index.html"><img src="./assets/3.PNG" alt="Project 3" /></a>
+            <a href="./projects/projext4/index.html"><img src="./assets/4.PNG" alt="Project 4" /></a><!-- no need for more that 5/6-->
+            <a href="./projects/projext5/index.html"><img src="./assets/5.png" alt="Project 5" style="border: 2px solid red; width: 200px;" /></a>
+            <a href="./projects/projext6/index.html"><img src="./assets/6.png" alt="Project 6" style="border: 2px solid red; width: 200px;" /></a> 
+<!-- Last item has been `TESTed as advised by ChatGPT w/o "<a href=" tag then adding it back, once HREF's didn't have Wrong paths or Wrong file-type,
+COPY was performed to the few above ProjectsGrid-elements  -->
 </div>
             <h3>Basics:</h3>    
-            <a href='./projects/projext1/pr_file.html' target="_blank"><img src= './assets/Inet_Lbasics.png' alt="Project's Overview"/></a>
-            <p id='cardFont'>Fig 1: Overview of 'Web-Devel' contained various topics (i.e. the underlying tech).</p>    
-        </div>
+            <img src= './assets/Inet_Lbasics.png' alt="Overview"/></img>
+            <p id='cardFont'><b>Figure 1: Overview of 'Web-Devel' contained various topics (i.e. the underlying tech).</b></p>    
+        </div> <!-- CUT from above: <a href='./projects/projext1/pr_file.html' target="_blank"> -->
     <div class="intro">
-        <h1>Tony_JS's</h1>
-        <p>Portfolio-pg - this a creation of self-learnt front-end 'WebDevel'. A few classes to update skills (down the line/run: was based on [*A prio and also Web2.0 CMS's, POST awareness of Web3.0: call ext. .js using reference www.w3.schools.com/ & <b>mdn</b> Web docs]. If you have an idea for your website 
-           or a simple design, I shall see what can be done to build it. Should you put your trust in my time'n'efforts, I gladly will see with aid of AI, how codeable it is to get the content shown and its dynamic(s) run online!</p> 
+        <b>Tony_JS's</b>
+        <p>Portfolio-pg - this a creation of self-learnt front-end 'WebDevel'. A few classes to update skills (down the line/run: was based on [*A prio and also <i>Web2.0</i> CMS's, POST <b>awareness of Web3.0</b> basics: call ext.<i> .js</i> using reference www.w3.schools.com/ & <b>mdn</b> Web docs].</p>
+        <p>If you have an <b>IDEA</b> for your website or a simple design, and you choose to present it to me, then I could and we shall see what can be done to build it.</p>
+        <p> Given that your choice is to put your trust in my time'n'efforts. Then I can take some time, using my skills I am able to see [w/ aid of <b>AI</b>], how much codeable it is--to get the content shown as well as its dynamic(s). <b>All that can be run online!</b></p> 
     </div>
     <hr />
     
     <section id="projects">
             
     <div id='projectsIntro'><h2>My projects</h2>
-        <p> Above PROJECTS [see ICONs] give a brief glimpse of 'look-a-like' projects, I could barely gather (such that I consider having grasped the code in them; by default, idea of No-Need to Reinvent the Wheel w/ 'classes to tap in' ToDo seemingly simple things like drawing shapes on screen)<br />
-            Clicking on each [ICON (this Pg's NOT Complete YET!] should open CODE content in browser tab.<br /> 
-            This entire site was build with HTML/CSS, and also is an exercise of JavaScript (as underlying technical logic).
+        <p> Above PROJECTS [see ICONs] allow You to take a glimpse of, briefly presented, projects. I was able to gather these (and such in them I can consider having grasped the basics of coding. It is common sense and by default that ideally the <b>idea</b> would become based on 'No-Need to Reinvent the Wheel'. As sometimes,  w/'classes to tap in' JavaScript or other underlying Web-page's code, these solutions can seemingly do simple things like formatting textual presentation as well as drawing shapes of different color on the browser's screen).<br />
+            Clicking on each [ICON (as these Sub-Pg's are <u>NOT Complete</u>, not yet!)] should open CODE content in browser tab.<br /> 
+            <i class="fas fa-arrow-up"></i><span class="blue-text">So.. All-in-all, </span>this entire site was build with HTML/CSS, and also is an exercise of JavaScript (as the underlying technical logic).
         </p>
+    <!-- using symbolic chars from font-awesome!However, it seems change of partial txt color could work from style.css-->
     </div>
 </body>
 </html>

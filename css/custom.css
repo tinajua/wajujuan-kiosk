@@ -1,0 +1,27 @@
+/* custom.css */
+
+body {
+  background-color: #70b121;
+  margin: 0;
+  font-family: sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-top: 1rem;
+}
+p {
+  margin-left: 5%;
+  margin-right: 0;
+}
+p.final {
+  font-size: 0.85em; /* or e.g., 14px, depending on your base font size */
+}
+
+
