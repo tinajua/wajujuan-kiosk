@@ -23,5 +23,7 @@ p {
 p.final {
   font-size: 0.85em; /* or e.g., 14px, depending on your base font size */
 }
-
+.text-section {
+  margin-left: 40px;
+}
 
