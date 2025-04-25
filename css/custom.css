@@ -21,7 +21,11 @@ p {
   margin-right: 0;
 }
 p.final {
-  font-size: 0.85em; /* or e.g., 14px, depending on your base font size */
+  font-size: 14px; /* fractional-value of em or e.g., 14px, depending on your base font size */
+}
+p.footnote {
+  font-size: 14px;
+  margin-left: 5%;
 }
 .text-section {
   margin-left: 40px;
