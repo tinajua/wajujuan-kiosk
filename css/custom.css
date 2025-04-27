@@ -12,9 +12,14 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3 {
+h1, h2, {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+}
+h3{
+    margin: 0;
+    font-size: 20px;
+    padding-bottom: 0px;
 }
 p {
   margin-left: 5%;
