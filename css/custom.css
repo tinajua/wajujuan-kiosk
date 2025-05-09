@@ -5,10 +5,6 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
 }
 
@@ -45,6 +41,10 @@ p, p.final {
 }
 p.final {
   font-size: 14px; /* fractional-value of em or e.g., 14px, depending on your base font size */
+}
+.small-icon {
+  width: 1rem;
+  height:1rem;
 }
 hr {
   width: 60%;

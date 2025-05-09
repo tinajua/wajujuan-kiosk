@@ -4,18 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/custom.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Project 2</title>
 </head>
-<body>
-
-    <h1>Project 2: My Cool Project</h1>
-    <p>[to be Described]Description of the project.</p>
-    <p>[2nd paragraph of to be Described] a Description</p>
-    <p>[3rd]</p>
-    <p class="final">Last txtual-paragraph [of smaller 0.85em font size]</p>
-<!--above is optional smaller text if paragraph perhaps is an annotation (so not necessarily need to be smaller font size)
-    <!-- Back to Main Page -->
-    <a href="../../index.html">Back to Portfolio</a>
-
+<body><!--Note: "<div style=" inherits Font size from Global custom.css thus below a manual way to make Heading1 font Bigger txt-->
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <h1 class="text-4xl font-bold">Project 2: Tailwind Custom Designs & ICONs - Discovery How to Get Started</h1>
+      <svg class="medium-icon" ... > <!-- this controls ICON size (below class=" w- h- " won't affect the size -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+      <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
+    </svg>
+   </div>
+<!-- Inside <p> 'U COULD' use <span class> behaves as manually bulleted-list: <span class="block before:content-['•'] before:mr-2 ml-4">First item</span>' and the same for 2nd item -->
+<!-- Instead<ol class="ml.."for basic arbitrary values for 'ml' in square brackets to INDENT-list in rem/px For a Precise margin!--->
+<p class="final">Requirements (a sw-component):
+  <ol class="ml-[4.5rem] list-decimal list-inside text-left text-sm leading-relaxed">
+    <li>for the purpose of compiling your styles [on-the-go] and</li>
+    <li>to launch 'live-server'.</li></ol></p> 
+<p class="final">Pre-requisites ( npm commands: npm install & 
+    <b class="inline">npm run dev</b> 
+    ): install and 
+    <b class="inline">run</b> TailwindCSS
+ </p>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <figure>
+      <img src= '../../assets/Twnd_Hello.png' alt="TailwindCSS Hello" class="mx-auto" />
+        <figcaption class="text-center mt-2 mb-6"> <!--'mb-6' gives a black line after the caption-->
+        Figure: This is the Hello page that can be opened from 
+        <b class="inline"> 'sub-dir' </b>
+        <b class="inline">/src</b> 
+        of project 
+        <b class="inline">dir</b></img>
+<!--in Above: CodeBlock required separeated "figcaptions" to be able to keep formatted words on the same line-->     
+        </figcaption>
+      </figure>
+    </div>
+    <br> <!--a line-break does NOT have ANY effect here as the Tailwind and custom.CSS have their separate effects and one may override! See comment after <head> at <body>-line -^ -->
+    <p class="final">Tailwind (OpenSource), has a shortcoming: it doesn't come w/ pre-designed UI components eg. Cards / Buttons. Instead, it's a low-level class, that lets You build custom designs. This means that Cards is possible to implement defining Tailwind components and its @layer components { (for a) .card (And,) @apply <b>ˇ</b>a FlexBox" justified & centered (or so).  
+    In this project,<br>I jumped into ready-made ICONS [downloadable in two file-formats, SVG is recommended]. The Discovery: ICONS can be placed on web-pages, the default values are not quite enough to produce an ICON into a desired size. Through a Trial & 'No-Error'-msg, the Lesson Learnt: <i>style.CSS</i> needs html-tag-definition added to be able to adjust SVG-ICON's size [as in my Excercise-case it was the case: a custom.css has Global Styles that apply to other projexts' web-page content as well, so in some design-case scenario, the size-adjusts of <b>Tailwind class-code values</b> may not have any effect at all, to be able to resize the ICON].</p>
+ <!-- <div class="ml-0 text-left"> would align Nothing! A Forceful Bulletproof Way is 'all unset' as in below <div style="all unset -->
+ <!-- <div style="text-align: left;> Optionally, add align & perhaps border: 1px solid red; margin: 0; padding: 0;"-->
+    <a href="../../index.html" 
+       style="color: #2563eb; text-decoration: underline;">
+       &larr; Back to Portfolio, &larr; Click!
+       </a>
+<hr class="my-2 border-t border-[#a0522d] w-3/4 mx-auto"><!--Tailwind's spacing applied around hr-separator line-->
+<div class="text-block"><!--Justified Txt-block, to control the left margin to 25%:-->
+       <p class="justified-wide">
+    For instance [to Get Stated, use tag like]: section className="m-12 flex h-screen items-center justify-centre bg-green-400 text-center text-3xl<b>¨</b>
+<!--Forces inline as plain CSS Forceful Left-Margin as 35% & Small-Font: -->
+    <p style="margin-left: 35%; margin-right: 0%; font-size: 0.875rem; text-align: left;">
+    *Break Down of above code's: flex = .flex { display: flex; items-center { align-items: center; justify-center .justify-center { justify-content: center;</p>
+       </p>
+    </p>
+</div><!-- ended up using <div> as in projext1's index.html => SO this's not a Tailwind-def.
+<!--above is optional smaller text if paragraph perhaps is an annotation (so not necessarily need to be smaller font size)-->
+<!--In above, <p class= can be used but avoid mixing class'n'style def's <p class="text-left ml-[20%] mr-[20%] text-sm text-white-600"> -->
 </body>
 </html>
