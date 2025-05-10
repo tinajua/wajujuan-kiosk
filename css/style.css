@@ -8,8 +8,8 @@ p {
 .intro {  
     color: rgb(253, 139, 81);
     background-color: rgb(32, 93, 105); 
-    margin: auto;
-    margin-top: 10%;   
+    margin: auto;       /* margin-top: 10%; */
+    padding-top: 10vh; /* instead of margin-top */
     width: 50%;
     min-height: 40vh;    
     height: auto;
