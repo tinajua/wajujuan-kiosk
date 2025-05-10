@@ -14,6 +14,12 @@ p {
     min-height: 40vh;    
     height: auto;
 }
+@media (max-width: 600px) {
+  .intro {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
 .consent-container {
   display: flex;
   align-items: center;
