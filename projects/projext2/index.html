@@ -7,11 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Project 2</title>
 </head>
-<body><!--Note: "<div style=" inherits Font size from Global custom.css thus below a manual way to make Heading1 font Bigger txt-->
+<body><!--Note: "<div style=" inherits Font size from Global custom.css thus below manual way to make Heading1 font Bigger txt-->
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <h1 class="text-4xl font-bold">Project 2: Tailwind Custom Designs & ICONs - Discovery How to Get Started</h1>
-      <svg class="medium-icon" ... > <!-- this controls ICON size (below class=" w- h- " won't affect the size -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+      <svg class="medium-icon" ... > <!-- this controls ICON size (below class=" w-[val] h-[val] " won't affect the size -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DA1F2" class="w-4 h-4"> <!-- a custom Color-fill can be set just fine!-->
       <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
     </svg>
    </div>
@@ -45,22 +45,37 @@
     <p class="final">Through a Trial & 'No-Error'-msg, the Lesson Learnt: <i>style.css</i> needs a style-class-tag-definition added in the file to be able to adjust SVG-ICON's [**as I had experienced, this was the case: <i>custom.css</i> has GlobalStyles that apply to other projects' web-page content as well, so in some design-case scenario, size-adjusts to <b>Tailwind's class-coded values</b> some of which having absolutely no effect at all, to be able to resize the ICON].</p>
  <!-- <div class="ml-0 text-left"> would align Nothing! A Forceful Bulletproof Way is 'all unset' as in below <div style="all unset -->
  <!-- <div style="text-align: left;> Optionally, add align & perhaps border: 1px solid red; margin: 0; padding: 0;"-->
-    <a href="../../index.html" 
-       style="color: #2563eb; text-decoration: underline;">
-       &larr; Back to Portfolio, &larr; Click!
-       </a>
+    <a href="../../index.html"
+        class="relative inline-block text-blue-600 hover:text-orange-600 transition-colors
+            underline decoration-orange-400 decoration-dotted decoration-[3px]
+            before:absolute before:bottom-0 before:left-0 before:w-full before:h-[1px]
+            before:bg-gray-600 before:z-[-1]">
+    &larr; Back to Portfolio, &larr; Click!
+</a>
+<!--Above is Tailwind's Pseudo element workaround for a Better Contrast to Orange dotten underline of the Hyperlink
+<!--the Old CSS 'drawingBoard' could only style it like this: style="color: #2563eb; text-decoration: underline; decoration-orange-500"> -->
 <hr class="my-2 border-t border-[#a0522d] w-3/4 mx-auto"><!--Tailwind's spacing applied around hr-separator line-->
 <div class="text-block"><!--Justified Txt-block, to control the left margin to 25%:-->
        <p class="justified-wide">
-    For instance [to Get Stated, use tag like]: section className="m-12 flex h-screen items-center justify-centre bg-green-400 text-center text-3xl<b>¨</b>
-<!--Forces inline as plain CSS Forceful Left-Margin as 30% & Small-Font (see line below): -->
-    <p style="margin-left: 30%; margin-right: 0%; font-size: 0.875rem; text-align: left;">
-    **Break Down of above code's: flex <b>=</b> .flex { display: flex; items-center <b>=</b> { align-items: center; justify-center <b>=</b> .justify-center { justify-content: center;<br></p>
-       </p>
+    For instance [Get Stated using]: section className="m-12 flex h-screen items-center justify-centre bg-green-400 text-center text-3xl<b>¨</b>
+<!--Forces inline as plain CSS Forceful Left-Margin as 35% & Small-Font (see line below): -->
+<!--Below is pure Tailwind: -->
+    <div class="ml-[35%] mr-0 text-sm text-left flex items-center gap-2">
+  <span>
+    <strong>Break Down of above code's:</strong> flex <b>=</b> .flex { display: flex;
+  </span>
+  <span class="underline md:underline-offset-8 decoration-dotted">
+    <b class="inline"> || </b> items-center <b>=</b> { align-items: center;
+  </span>
+  <span class="underline md:underline-offset-8 decoration-dotted">
+      <b class="inline"> || </b> justify-center <b>=</b> .justify-center { justify-content: center;
+  </span>
+       </div>
+<!--Below <div> divides IMG & its class="mt-4" to give padding space above it -->
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <figure>
+    <figure class="mt-4">
     <img src="../../assets/CPens_twndHello.png" alt="Codepen's TailwindCSS Hello" class="mx-auto" />
-    <figcaption class="text-center mt-2 mb-6"> <!--omitted 'mb-6' to see if outside div can use <br> for a blank-line-->
+    <figcaption class="text-center mt-2 mb-6"> <!--set value 'mt-2', figcaption can also add padding inside div/figure - is a clean way?-->
         Figure: CodePen's Tailwind Hello page automagically opes in app
         <b class="inline"> once you enter Setup </b>
         <b class="inline">Scroll down enter </b>
