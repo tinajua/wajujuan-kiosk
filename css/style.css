@@ -40,21 +40,20 @@ h1 {
   color: #222; /* is Black, compare txt color in Project */
   font-size: 14px; /* to 16 px or set even  smaller */
 }
-/*--------body styling for experience.html Pg-----*/
-/* Only applies to project5 */
+/*--------Body styling for experience.html Pg-ONLY-----*/
 body.experience {
   background-color: #70b121;
   color: #fffff0;
   margin-left: 1in;
   margin-right: 0;
 }
-/*----------- PROJEXTS Section ----------*/
+/*----------- Projects Section ----------*/
 h2 {
     margin: 0;
     font-size: 50px;
     color: rgb(253, 139, 81);
 }
-/* lays out all pages to list items horizontally, evenly spaced */
+/* Lay out of all pages to list items horizontally, evenly spaced */
 ul {
   display: flex;
   list-style: none; /* removes bullets */
@@ -64,40 +63,53 @@ ul {
 ul li {
   margin-right: 20px;
 }
-/* styles a Menu-icon chosen from FA bars class (for its check-box & text for the user's readable understanding */
+/* Main-Pg style of its item: Menu-icon chosen from FA bars class (chosen one is its check-box & txt for user's readable understanding) */
 .checkbtn {
-  font-size: 14px;
+  font-size: 1rem; /* ~16px */
   color: #444; /* this is greyish color */
   cursor: pointer;
   user-select: none;
 }
 .checkbtn i {
-  font-size: 14px /* adjust icon size */
+  font-size: 14px; /* adjust icon size */
   margin-right: 8px; /* spacing btwn icon & txt */
 }
-/* Be sure the #projects selector is outside h1 */
+/* Main-Pg's Bottom block: Be sure the #projects selector is outside <h1> */
 #projects {
-    background-color: rgb(238, 221, 172);
-    display: block;
-    color: rgb(32, 93, 105);
-    font-size: 20px; /* removed space between 20 and px */
+  background-color: rgb(238, 221, 172);
+  display: block;
+  color: rgb(32, 93, 105);
+  font-size: 20px;
+  padding-bottom: 80px; /* 👈 adds space at the bottom */
 }
+/* Main-Pg's Invisible Grid: containing images that can be 'Hovered Over'(see below) */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 20px; /* spacing between boxes */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
   max-width: 960px;
   margin: 0 auto;
-  margin-bottom: 0px; /* 👈 Add or reduce this value */
   padding: 20px;
+  margin-bottom: 0px; /* 👈 Add or reduce this value
 }
+/*.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+/*  gap: 20px; /* spacing between boxes */
+/*  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 0px; /* 👈 Add or reduce this value 
+  padding: 20px;} */
 .projects-grid a img {
   width: 100%;
   height: auto;
   border: 2px solid #ccc;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+/* This makes Invisibe Grid-items 'Hover-Over' making img-content intuitive to be able to 'Click' One of them */
 .projects-grid a img:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 12px rgb(0,0,0, 0.2); /* 👈 adds "lift" */
 }
