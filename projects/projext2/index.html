@@ -7,35 +7,49 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Project 2</title>
 </head>
-<body><!--Note: "<div style=" inherits Font size from Global custom.css thus below manual way to make Heading1 font Bigger txt-->
+<body><!--Note: "<div style=" inherits Font size from Global custom.css thus below manual way to make Heading1's Font Bigger txt-->
+<script src="https://kit.fontawesome.com/d181554f9a.js" crossorigin="anonymous"></script>
+
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <h1 class="text-4xl font-bold">Project 2: Tailwind Custom Designs & Logos - Discovery How to Get Started</h1>
       <!-- <svg class="medium-icon" ...> It's possibe to wrap w/ this tag to control ICON size (below " w-[val] h-[val] " give px level hence small effect to the size -->
   <div class="p-2 rounded-full bg-gray-200 inline-block">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DA1F2" class="w-16 h-16 large-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DA1F2" class="w-8 h-8 large-icon">
       <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h3.5a.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
     </svg>
   </div>
 </div>
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+<!--Below was an alt-way to produce icon as freely avail from kit.fontawesome.com -->
+<div class="ml-[35%] mr-0 text-sm text-left flex items-center gap-2">
+  <span>
+    <strong>If under 'Designs&Logo' logo doesn't show, it didn't render due to ur Browser</strong> [<b>*Safari</b> is known for this shortcoming]
+  </span> 
+<!-- this type of KIT.fontawesome  icon does not render using tag <i class="fas fa-brush fa-solid>, closes with </i>-->
+<!-- plausibly fontawesome-src would need to add into <HEAD> for alt-way of producing an icon to show on Pg&WorkOut-->   
+</div>
+
 <hr class="my-2 border-t border-[#a0522d] w-3/4 mx-auto">
-   <!-- <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <!-- a custom Color-fill can be set just fine! Although, w/o the dimensions, the wrapping <div> above might collapse or appear empty.
+    <!-- a custom Color-fill to Logo can be set just fine! Although, w/o the dimensions, the wrapping <div> above might collapse or appear empty.
  
 <!-- Inside <p> 'U COULD' use <span class> behaves as manually bulleted-list: <span class="block before:content-['•'] before:mr-2 ml-4">First item</span>' and the same for 2nd item -->
 <!-- Instead<ol class="ml.."for basic arbitrary values for 'ml' in square brackets to INDENT-list in rem/px For a 'Precise margin'!--->
-<p class="final text-xl"">Requirements (a sw-component):
-  <ol class="ml-[4.5rem] list-decimal list-inside text-left leading-relaxed">
+<div>
+  <p class="final text-xl leading-normal !ml-0">Requirements (a sw-component):
+  <ol class="!ml-0 list-decimal list-inside text-left leading-relaxed">
     <li>for the purpose of compiling your styles [on-the-go] and</li>
-    <li>to launch 'live-server'.</li></ol></p> 
-<p class="final text-xl">Pre-requisites ( npm commands: npm install & 
+    <li>to launch 'live-server'.</li></ol>
+</p> 
+<p class="final text-xl leading-normal !ml-0">Pre-requisites ( npm commands: npm install & 
     <b class="inline">npm run dev</b> 
     ): install and 
     <b class="inline">run</b> TailwindCSS
  </p>
+</div>
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <figure>
       <img src= '../../assets/Twnd_Hello.png' alt="TailwindCSS Hello" class="mx-auto" />
-        <figcaption class="text-center mt-2 mb-6"> <!--'mb-6' gives a blank line after the caption-->
+        <figcaption class="text-center mt-2 ml-6 mb-6"> <!--'mb-6' GIVES a blank line after the caption-->
         Figure: This is the Hello page that can be opened from 
         <b class="inline"> 'sub-dir' </b>
         <b class="inline">/src</b> 
@@ -45,10 +59,11 @@
         </figcaption>
       </figure>
     </div>
-    <br> <!--a line-break does NOT have ANY effect here as the Tailwind and custom.CSS have their separate effects and one may override! See comment after <head> at <body>-line -^ -->
-    <p class="final text-xl">Tailwind (OpenSource-sw as is) has a shortcoming: it doesn't come w/ pre-designed UI components eg. Cards / Buttons. Instead, it's a low-level class, that lets You build custom designs. This means that Cards is possible to implement defining Tailwind components and its @layer components {<br>(for a) .card (And,) @apply <b>&#34;</b>a FlexBox<b>&#34;</b>, justified & centered (or so).<br>  
-    In this project, I jumped into ready-made Logos [downloadable in two file-formats, SVG is recommended]. My Discovery: Logos can be placed on web-pages [pasting its tag 'inline' or as SVG-file].<br>By default [inline-tagged] Logo's size-values are not big enough to notice it. Making an adjustment to size better ables to produce the Logo to look more like a bigger and even colored Logo (that looks more like an 'ICON').</p>
-    <p class="final text-xl">Through a Trial & 'No-Error'-msg, the Lesson Learnt: <i>style.css</i> in this project needed adding a style-class-tag-definition. So [**tag: svg xmlns=... class=ˇw-[value] h-[value]ˇ] placing these values in index.html adjusts SVG even up to be looking-like-an-'ICON'<br>[**in my experience, this was the case: <i>custom.css</i> has 'GlobalStyles' that apply to other projects' web-page content as well. So in some page-design scenarios, the size-adjustments to <b>Tailwind's class-coded values</b> like to resize inline placed Logo. Well it was tricky! And, inline-Logos might not show on browsers like Safari* [*Reddit.com has this documented]</p>
+    <!--<br>a line-break DID have its effect here because its outside <div's. Tailwind & custom.CSS have their separate effects and one of the two may override! See comment after <head> at <body>-line -^ -->
+    <p class="final text-xl leading-normal">Tailwind (OpenSource-sw as is) has a shortcoming: it doesn't come w/ pre-designed UI components eg. Cards / Buttons. Instead, it's a low-level class, that lets You build custom designs. This means that for instace Cards and Buttons, for that matter, are some of the many possible to implement. So define Tailwind components as follows:<br>its @layer components {<br>(for a) .card (And,) @apply <b>&#34;</b>a FlexBox<b>&#34;</b>, justified & centered (or so).
+    <hr class="my-2 border-t border-[#a0522d] w-3/4 mx-auto">  
+    <p class="final text-xl leading-normal">In this project, I jumped into ready-made Logos [downloadable in two file-formats, SVG is recommended]. My Discovery: Logos can be placed on web-pages [pasting its tag 'inline' or as SVG-file].<br>By default [inline-tagged] Logo's size-values are not big enough to notice it. Making an adjustment to size better ables to produce the Logo to look more like a bigger and even colored Logo (that looks more like an 'ICON').</p>
+    <p class="final text-xl leading-normal">Through a Trial & 'No-Error'-msg, the Lesson Learnt: <i>style.css</i> in this project needed adding a style-class-tag-definition. So [**tag: svg xmlns=... class=ˇw-[value] h-[value]ˇ] placing these values in index.html adjusts SVG even up to be looking-like-an-'ICON'<br>[**in my experience, this was the case: <i>custom.css</i> has 'GlobalStyles' that apply to other projects' web-page content as well. So in some page-design scenarios, the size-adjustments to <b>Tailwind's class-coded values</b> like to resize inline placed Logo. Well it was tricky! And, inline-Logos might not show on browsers like Safari* [*Reddit.com has this documented]</p>
  <!-- <div class="ml-0 text-left"> would align Nothing! A Forceful Bulletproof Way is 'all unset' as in below <div style="all unset -->
  <!-- <div style="text-align: left;> Optionally, add align & perhaps border: 1px solid red; margin: 0; padding: 0;"-->
     <a href="../../index.html"
@@ -96,7 +111,7 @@
        &rarr; TailwindCSS Tutorial for Beginners, to find out more! Click-this-Link &rarr;
        </a>
     </p>
-</div><!-- ended up using <div> as in projext1's index.html => SO this's not a Tailwind-def.
+</div><!-- ended up using <div> as in projext1's index.html => SO this's not a Tailwind-def.-->
 <!--above is optional smaller text if paragraph perhaps is an annotation (so not necessarily need to be smaller font size)-->
 <!--In above, <p class= can be used but avoid mixing class'n'style def's <p class="text-left ml-[20%] mr-[20%] text-sm text-white-600"> -->
 </body>
