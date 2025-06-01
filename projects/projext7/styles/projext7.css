@@ -1,0 +1,40 @@
+.image-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 0;
+}
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+}
+
+.img-fixed-height {
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.projext7-caption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: inherit;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+.projext7-link {
+  text-decoration: none;
+}
+
+.projext7-box {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  background: #f9f9f9;
+  max-width: 600px;
+}

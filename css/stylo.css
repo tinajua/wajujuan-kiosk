@@ -1,0 +1,179 @@
+body {
+  background-color: #57eb16;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+}
+
+p {
+  margin-top: 0px; /* or even 0 */
+}
+/*----------- Intro Section ------------*/
+.intro {  
+    color: rgb(253, 139, 81);
+    background-color: rgb(32, 93, 105); 
+    margin: auto;       /* margin-top: 10%; */
+    padding-top: 10vh; /* instead of margin-top */
+    width: 50%;
+    min-height: 40vh;    
+    height: auto;
+}
+@media (max-width: 600px) {
+  .intro {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
+.consent-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+.consent-container i {
+  margin-right: 5px;
+  color: #333; /* compare & adjust to text elsewhere on pg */
+}
+.submit-section {
+  margin-bottom: 10px;
+}
+h1 {
+  font-weight: normal;
+  color: #222;
+  font-size: 14px;
+}
+/*--------body styling for experience.html Pg-----*/
+/* Only applies to project5 */
+body.experience {
+  background-color: #70b121;
+  color: #fffff0;
+  margin-left: 1in;
+  margin-right: 0;
+}
+/* Scoped styling for navigation only */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+  background-color: #57eb16;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+nav a:hover,
+nav a.active {
+  color: #007BFF;
+  text-decoration: underline;
+}
+nav a.active {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+/*----------- PROJEXTS Section ----------*/
+h2 {
+    margin: 0;
+    font-size: 50px;
+    color: rgb(253, 139, 81);
+}
+/* lays out all pages to list items horizontally, evenly spaced */
+ul {
+  display: flex;
+  list-style: none; /* removes bullets */
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  margin-right: 20px;
+}
+/* styles a Menu-icon chosen from FA bars class (for its check-box & text for the user's readable understanding */
+.checkbtn {
+  font-size: 14px;
+  color: #444; /* this is greyish color */
+  cursor: pointer;
+  user-select: none;
+}
+.checkbtn i {
+  font-size: 14px /* adjust icon size */
+  margin-right: 8px; /* spacing btwn icon & txt */
+}
+/* Be sure the #projects selector is outside h1 */
+#projects {
+    background-color: rgb(238, 221, 172);
+    display: block;
+    color: rgb(32, 93, 105);
+    font-size: 20px; /* removed space between 20 and px */
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* spacing between boxes */
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 0px; /* 👈 Add or reduce this value */
+  padding: 20px;
+}
+.projects-grid a img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.projects-grid a img:hover {
+  transform: scale(1.05);
+}
+/* This is Responsicve design styles that does hadling for both: desktop & mobile environ */
+.img-fixed-height {
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;         /* Allows stacking on small screens */
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 0;
+}
+
+.image-row img {
+  max-width: 100%;         /* Prevent overflow on small screens */
+}
+
+.projext7-link {
+  text-decoration: none;
+}
+
+.projext7-box {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  background: #57eb16;
+  max-width: 600px;
+}
+
+/* Responsive tweak: stack vertically under 700px screen width */
+@media (max-width: 700px) {
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-fixed-height {
+    width: auto;
+    height: auto;
+    max-width: 90vw;
+    max-height: 300px;
+  }
+}
