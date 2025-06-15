@@ -24,7 +24,7 @@ const contacts = [
     title:"Junior Developer", 
     email: "info@example.com", 
     phone: "+353871818181",
-    image: '/Charlie_Brown.png' // Cartoon
+    image: './Charlie_Brown.png' // Cartoon
   },
 ];
 
