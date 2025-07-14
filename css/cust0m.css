@@ -11,13 +11,13 @@ body::before {
 } /* Above is to add a very fine hairline shadow like slats catching a hint of light.*/
 /* Optional reset styles: below is Mocha*/
 body {
-  background: repeating-linear-gradient(
-    to bottom,
-    #d8c4a5,     /* soft warm pastel brown */
-    #d8c4a5 24px,
+  background: inherit;
+/* (All-things-CONSIDERED) To Keep Vid-related-stylings for Future-use
+bottom line, //earlier Idea had been to have win-shades-like
+    #d8c4a5, // soft warm pastel brown lines across pg
+    #d8c4a5 24px, //using these color hex-codes
     #c6aa86 24px,
-    #c6aa86 48px
-  );
+    #c6aa86 48px */
   margin: 0;
   padding: 0;
   font-family: sans-serif;

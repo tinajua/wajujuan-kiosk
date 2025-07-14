@@ -1,5 +1,5 @@
 body {
-    background-image: url('../assets/ftm4.png'); /* Adjust path as needed */
+    background: url('../assets/ftm4.png'); /* Adjust path as needed */
     background-size: cover;       /* Scales image to cover the entire viewport */ 
     background-repeat: no-repeat; /* Prevents tiling */
     background-position: center;  /* Centers the image */
@@ -81,6 +81,20 @@ ul li {
 .checkbtn i {
   font-size: 14px /* adjust icon size */
   margin-right: 8px; /* spacing btwn icon & txt */
+}
+.link-container {
+  position: absolute;
+  top: 20px;           /* Adjust as needed */
+  right: 40px;         /* Space from the right edge */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;           /* Spacing between links */
+  z-index: 10;         /* Make sure it's on top of background */
+}
+.link-container a {
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: bold;
 }
 /* Be sure the #projects selector is outside h1 */
 #projects {
