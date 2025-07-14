@@ -96,6 +96,19 @@ ul li {
   text-decoration: underline;
   font-weight: bold;
 }
+.link-banner {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1em;
+}
+.reminder {
+  font-size: 0.8rem;
+  color: #3aa44a; /* British Airways panel green-ish */
+  margin-top: 4px;
+  display: block;
+}
+
 /* Be sure the #projects selector is outside h1 */
 #projects {
     background-color: rgb(238, 221, 172);
