@@ -79,7 +79,7 @@ ul li {
   user-select: none;
 }
 .checkbtn i {
-  font-size: 14px /* adjust icon size */
+  font-size: 14px; /* adjust icon size */
   margin-right: 8px; /* spacing btwn icon & txt */
 }
 .link-container {
