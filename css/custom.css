@@ -1,63 +1,70 @@
 /* custom.css */
 
 body {
-  background-color: #70b121;
-  margin: 0;
-  font-family: sans-serif;
-  color: #fff;
-  min-height: 100vh;
+    background-color: #70b121;
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+    min-height: 100vh;
 }
 
-h1, h2, {
-  text-align: center;
-  margin-top: 0.5rem;
+h1,
+h2 {
+    text-align: center;
+    margin-top: 0.5rem;
 }
-h3{
+h3 {
     margin: 0;
     font-size: 20px;
     padding-bottom: 0px;
 }
 p {
-  margin-left: 5%;
-  margin-right: 0;
+    margin-left: 5%;
+    margin-right: 0;
 }
 .text-block {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 p.justified-wide {
-  text-align: justify;
-  margin-inline: calc(25% + 1in) 5%;
-  box-sizing: border-box;
+    text-align: justify;
+    margin-inline: calc(25% + 1in) 5%;
+    box-sizing: border-box;
 } /* a basic setting (had been): "width: 60%;" as needed to adjust to taste of justification*/
-/* margin-left:25%; Instead of: had tried to nudge 2-inches to right, as below [alt: margin: 0 auto; centers the block] 
-  margin-left: calc(25% + 1in); Instead of these settings, for all more robust way to do it [was required]. 
+/* margin-left:25%; Instead of: had tried to nudge 2-inches to right, as below [alt: margin: 0 auto; centers the block]
+  margin-left: calc(25% + 1in); Instead of these settings, for all more robust way to do it [was required].
   padding-left: 0 1em; /* 0 is 1 inch, what about 1, is that 2 inches? */
-/*Trials to nudge yielded in Txt going 'out of bounds' in some browsers */ 
+/*Trials to nudge yielded in Txt going 'out of bounds' in some browsers */
 /*Below makes sure both normal <p> and <p class="final"> have 5% left and right margins, explicitly.*/
-p, p.final {
-  margin-left: 5%;
-  margin-right: 5%;
+p,
+p.final {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 p.final {
-  font-size: 14px; /* fractional-value of em or e.g., 14px, depending on your base font size */
+    font-size: 14px; /* fractional-value of em or e.g., 14px, depending on your base font size */
 }
 .small-icon {
-  width: 1rem;
-  height:1rem;
+    width: 1rem;
+    height: 1rem;
 }
 hr {
-  width: 60%;
-  margin: 2rem auto;
-  border: 1px dotted #ffffff;
+    width: 60%;
+    margin: 2rem auto;
+    border: 1px dotted #ffffff;
 }
 p.footnote {
-  font-size: 14px;
-  margin-left: 20%;
-  margin-right: 20%;
-  text-align: justify;
+    font-size: 14px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
 }
 .text-section {
-  margin-left: 40px;
+    margin-left: 38px; /* set the margin  for lists in projects _here_ */
 }
-
+.indented-list {
+    margin-left: 30px !important; /* this margin set has a slight effect */
+}
+.text-section li {
+    margin-bottom: 0.5rem;
+}
