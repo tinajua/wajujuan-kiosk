@@ -24,30 +24,30 @@
 <div class="ml-[35%] mr-0 text-sm text-left flex items-center gap-2">
   <span>
     If under 'Designs&Logos', a logo doesn't show, it <strong>didn't render due to ur Browser</strong> [<i>*Safari</i> is known for this shortcoming]
-  </span> 
-<!-- this type of KIT.fontawesome  icon does not render using tag <i class="fas fa-brush fa-solid>, closes with </i>-->
-<!-- plausibly fontawesome-src would need to add into <HEAD> for alt-way of producing an icon to show on Pg&WorkOut-->   
+  </span>
+<!-- this type of KIT.fontawesome icon does not render using tag <i class="fas fa-brush fa-solid>, closes with </i>-->
+<!-- plausibly fontawesome-src would need to add into <HEAD> for alt-way of producing an icon to show on Pg&WorkOut-->
 </div>
 <div class="ml-[48%] mr-0 text-sm textleft flex items-center gap-2">
    <img src='../../assets/icons8-clock.gif' alt="icons8-Clock" class="mx-auto" /><a target="_blank" href="https://icons8.com/icon/HBlwtI4vBVCe/clock">Clock</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></img>
    <div class="ml-[15%] mr-0 text-sm text-left flex items-center gap-2">
-   <span>This Clock[ICON] gets retrieved from an animated-gif file* in the repo<br>[*i.e. non-SVG-based rendering].</span>  
+   <span>This Clock[ICON] gets retrieved from an animated-gif file* in the repo<br>[*i.e. non-SVG-based rendering].</span>
    </div>
 </div>
 <hr class="my-2 border-t border-[#a0522d] w-3/4 mx-auto">
-    <!-- a custom Color-fill to Logo can be set just fine! Although, w/o the dimensions, the wrapping <div> above might collapse or appear empty.
- 
-<!-- Inside <p> 'U COULD' use <span class> behaves as manually bulleted-list: <span class="block before:content-['•'] before:mr-2 ml-4">First item</span>' and the same for 2nd item -->
-<!-- Instead<ol class="ml.."for basic arbitrary values for 'ml' in square brackets to INDENT-list in rem/px For a 'Precise margin'!--->
+    <!-- a custom Color-fill to Logo can be set just fine! Although, w/o the dimensions, the wrapping div above might collapse or appear empty. -->
+ <!-- Inside p: U COULD use span class as a manually bulleted list ... -->
+
+<!-- Instead<ol class="ml.."for basic arbitrary values for 'ml' in square brackets to INDENT-list in rem/px For a 'Precise margin'! -->
 <div>
   <p class="final text-xl leading-normal !ml-0">Requirements (a sw-component):
   <ol class="!ml-0 list-decimal list-inside text-left leading-relaxed">
     <li>for the purpose of compiling your styles [on-the-go] and</li>
     <li>to launch 'live-server'.</li></ol>
-</p> 
-<p class="final text-xl leading-normal !ml-0">Pre-requisites ( npm commands: npm install & 
-    <b class="inline">npm run dev</b> 
-    ): install and 
+</p>
+<p class="final text-xl leading-normal !ml-0">Pre-requisites ( npm commands: npm install &
+    <b class="inline">npm run dev</b>
+    ): install and
     <b class="inline">run</b> TailwindCSS
  </p>
 </div>
@@ -55,20 +55,20 @@
       <figure>
       <img src= '../../assets/Twnd_Hello.png' alt="TailwindCSS Hello" class="mx-auto" />
         <figcaption class="text-center mt-2 ml-6 mb-6"> <!--'mb-6' GIVES a blank line after the caption-->
-        Figure: This is the Hello page that can be opened from 
+        Figure: This is the Hello page that can be opened from
         <b class="inline"> 'sub-dir' </b>
-        <b class="inline">/src</b> 
-        of project 
+        <b class="inline">/src</b>
+        of project
         <b class="inline">dir</b></img>
-<!--in Above: CodeBlock required separated "figcaptions" to be able to keep formatted words on the same line-->     
+<!--in Above: CodeBlock required separated "figcaptions" to be able to keep formatted words on the same line-->
         </figcaption>
       </figure>
     </div>
     <!--<br>a line-break DID have its effect here because its outside <div's. Tailwind & custom.CSS have their separate effects and one of the two may override! See comment after <head> at <body>-line -^ -->
-    <p class="final text-xl leading-normal">Tailwind (OpenSource-sw as is) has a shortcoming: it doesn't come w/ pre-designed UI components eg. Cards / Buttons. Instead, it's a low-level class, that lets You build custom designs. However, this means that for instance Cards and Buttons, for that matter, are some of the many possible to implement. So define Tailwind components as follows:<br>its @layer components {<br>(for a) .card (And,) @apply <b>&#34;</b>a FlexBox<b>&#34;</b>, justified & centered (or so).
-    <hr class="my-2 border-t border-[#a0522d] w-3/4 mx-auto">  
-    <p class="final text-xl leading-normal">In this project, I jumped into ready-made Logos [downloadable in two file-formats, SVG is recommended]. My Discovery: Logos can be placed on web-pages [pasting its tag 'inline' or as SVG-file].<br>By default [inline-tagged] Logo's size-values are not big enough to notice it. Making an adjustment to size better ables to produce the Logo to look more like a bigger and even colored Logo (that looks more like an 'ICON').</p>
-    <p class="final text-xl leading-normal">Through a Trial & 'No-Error'-msg, the Lesson Learnt: <i>style.css</i> in this project needed adding a style-class-tag-definition. So [**tag: svg xmlns=... class=ˇw-[value] h-[value]ˇ] placing these values in index.html adjusts SVG even up to be looking-like-an-'ICON'<br>[**in my experience, this was the case: <i>custom.css</i> has 'GlobalStyles' that apply to other projects' web-page content as well. So in some page-design scenarios, the size-adjustments to <b>Tailwind's class-coded values</b> often in design, is to resize inline placed Logo. Well it was tricky! And, inline-Logo might not show on browsers like <i>Safari</i>* [*Stackoverflow.com has comments on <i>Safari related render issue</i>]</p>
+    <p class="final text-xl leading-normal">Tailwind (OpenSource-sw as is) has a shortcoming: it doesn't come w/ pre-designed UI components eg. Cards / Buttons. Instead, it's a low-level class, that lets You build custom designs. However, this means that for instance Cards and Buttons, for that matter, are some of the many possible to implement. So define Tailwind components as follows:<br>its @layer components {<br>(for a) .card (And,) @apply <b>&#34;</b>a FlexBox<b>&#34;</b>, justified & centered (or so).</p>
+    <hr class="my-2 border-t border-[#a0522d] w-3/4 mx-auto">
+    <p class="final text-xl leading-normal">In this project, I jumped into ready-made Logos [downloadable in two file-formats, SVG is recommended]. My Discovery: Logos can be placed on web-pages [pasting its tag 'inline' or as SVG-file].<br>By default [inline-tagged] Logo's size-values are not big enough to notice it. Making an adjustment to size better ables to produce the Logo to look more like a bigger and even padded Logo (surfaces better, &uml;Crisp'n'Clear&uml;).<br />
+    Through a Trial & 'No-Error'-msg, the Lesson Learnt: <i>style.css</i> in this project needed adding a style-class-tag-definition. So [**tag: svg xmlns=... class=ˇw-[value] h-[value]ˇ] these values placedin the index.html adjusts SVG's size, a lot Bigger!<br /><br />[**in my experience, this was the case: <i>custom.css</i> has 'GlobalStyles' that apply to other projects' web-page content as well. So in some page-design scenarios, the size-adjustments to <b>Tailwind's class-coded values</b> often in design, is to resize inline placed Logo. An unexpected Cross-platform issue surfaced during testing on a friend's MacBook. The inline SVG logo rendered correctly on most browsers but failed to appear in Safari , making the problem difficult to detect until late-stage testing. [***Stackoverflow.com has touched this subject: <i>Safari render issue</i>]</p>
  <!-- <div class="ml-0 text-left"> would align Nothing! A Forceful Bulletproof Way is 'all unset' as in below <div style="all unset -->
  <!-- <div style="text-align: left;> Optionally, add align & perhaps border: 1px solid red; margin: 0; padding: 0;"-->
 <div style="margin: 0; padding; 0; text-align: left; all unset">
@@ -79,8 +79,8 @@
             before:bg-gray-600 before:z-[-1]">
     &larr; Back to Portfolio, &larr; Click!</a>
 </div>
-<!--Above is Tailwind's Pseudo element workaround for a Better Contrast to Orange dotten underline of the Hyperlink
-<!--the Old CSS 'drawingBoard' could only style it like this: style="color: #2563eb; text-decoration: underline; decoration-orange-500"> -->
+<!--Above is Tailwind's Pseudo element workaround for a Better Contrast to Orange dotten underline of the Hyperlink -->
+<!--the Old CSS 'drawingBoard' could only style it like this: style="color: #2563eb; text-decoration: underline; decoration-orange-500 -->
 <hr class="my-2 border-t border-[#a0522d] w-3/4 mx-auto"><!--Tailwind's spacing applied around hr-separator line-->
 
 <div class="text-block"><!--Justified Txt-block, to control the left margin to 25%:-->
