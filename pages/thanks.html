@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                background: linear-gradient(
+                    to bottom,
+                    #ffffff,
+                    #0a0d02
+                ); /* Pitch black gradient to a hint of greenish-yellow */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-family: sans-serif;
+            }
+            .message-container {
+                color: #d4d4d4; /* Light gray for contrast */
+                font-size: 1rem;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="message-container">
+            <h2>Thank You!</h2>
+            <p>
+                Your message has been received. I got it directly to my
+                email.<br />
+                Have a wonderful day!<br /><br />
+                <!-- Back to Main Page -->
+                <a href="../../index.html"><u>Back to Portfolio</u></a>
+            </p>
+        </div>
+        <script>
+            localStorage.setItem(
+                "contactDate",
+                new Date().toISOString().slice(0, 10),
+            );
+        </script>
+        <!-- Save today's date in ISO format to localStorage after submission -->
+    </body>
+</html>

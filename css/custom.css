@@ -14,13 +14,35 @@ h2 {
     margin-top: 0.5rem;
 }
 h3 {
-    margin: 0;
+    margin: 38px;
     font-size: 20px;
     padding-bottom: 0px;
 }
 p {
     margin-left: 5%;
     margin-right: 0;
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-card {
+    max-width: 420px;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    min-height: 10vh; /* this places elemnt lower on the page */
+    background-color: #374151; /* Tailwind gray-700 */
+    border-radius: 12px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); */
+    /* not displaying in Ivory */
+
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.info-card h3 {
+    margin-top: 0;
 }
 .text-block {
     width: 100%;
@@ -63,7 +85,7 @@ p.footnote {
     margin-left: 38px; /* set the margin  for lists in projects _here_ */
 }
 .indented-list {
-    margin-left: 30px !important; /* this margin set has a slight effect */
+    padding-left: 30px !important; /* this margin set has a slight effect */
 }
 .text-section li {
     margin-bottom: 0.5rem;

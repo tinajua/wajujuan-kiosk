@@ -1,39 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Srry Page</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: linear-gradient(to bottom, #ffffff, #0a0d02); /* Pitch black gradient to a hint of greenish-yellow */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      font-family: sans-serif;
-    }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                background: linear-gradient(
+                    to bottom,
+                    #b8c0c8,
+                    #0a0d02
+                ); /* Pitch black gradient to a hint of greenish-yellow */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-family: sans-serif;
+            }
+            #contact {
+                max-width:700px;
+                margin: 0 auto; /* subtle glass-panel effect defined below*/
+                padding: 24px;
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                border-radius: 12px;
+            }
+            #contact input,
+            #contact textarea{
+                width:100%;
+                padding:10px;
+            }
+            #contact button{
+                padding:10px 20px;
+            }
+            .heading {
+                color: #8888ff; /* Light pastel color chosen */
+                font-size: 1.5rem; /*This size for the main header message */
+                font-family: inherit;
+                margin: 2rem;
+            }
+            h2 {
+                /* secondary heading font-style and its color approximation to Tailwind's indigo-400 */
+                font-size: 1.2rem;
+                color: #8888ff;
+                margin: 1.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+                color: #88f;
+                margin-top: 0.5rem;
+            }
+            .message-container {
+                color: #9900aa; /* Purple for contrast */
+                font-size: 1rem;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!--contact section-->
+        <div class="heading">
+            Contact Me
+            <h2>Expect no reply</h2>
+            <div class="message-container">
+                Please kindly comment or express in few words, a virtual 'Tea/Coffee break'<br />[eg. Happy coding,
+                'Many thanks' or so].<br />
+                Explored the site? [it's all in Github]<br />Enjoying its examples for
+                Your learning?<br />
+            </div>
+        </div>
+        <section id="contact">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input
+                    type="hidden"
+                    name="access_key"
+                    value="67ee571f-c3d8-4ff8-bd28-70d58210a812" <!-- key from W3Forms -->
+                <input type="hidden" name="subject" value="Grats.. abc" /> <!-- forces a generic subject to each submission -->
+                <input
+                    type="hidden"
+                    name="redirect"
+                    value="thanks.html" <!-- redirects to a 'thank-you page after submission -->
+                <!-- Adds spam protection: -->
+                <input
+                type="checkbox" name="botcheck" style="display:none;" />
+               <!-- Below paragraph tags label and draw the Input Form -->
+                <p>
+                    <label for="name">Initials *</label><br>
+                    <input
+                    id="name"
+                    class="short-field"
+                    type="text"
+                    name="name"
+                    placeholder="JW" /* shows JW in light gray */
+                    maxlength="2" /* limits input to two characters */
+                    autocomplete="off" /* turns off browser's autocomplete feature */
+                    required>
+                </p>
+                <p>
+                    <label for="email">EMAIL *</label><br />
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="name@example.com"
+                        required>
+                </p>
+                <p>
+                    <label for="subject">Subject (optional)</label><br>
+                    <input
+                    id="subject"
+                    class="subject-field"
+                    type="text"
+                    name="subject"
+                    placeholder="Max. 3 words"
+                    maxlength="40">
+                </p>
+                <p>
+                    <label for="message">
+                    Message *
+                    </label><br>
 
-    .heading {
-      color: #ebcad5; /* Light pastel pink */
-      font-size: 2em;
-      margin: 0.5em 0;
-    }
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="8"
+                        cols="60"
+                        placeholder="Write your message here..."
+                        required>
+                    </textarea>
+                </p>
 
-    .message-container {
-      color: #d4d4d4; /* Light gray for contrast */
-      font-size: 1em;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="heading">srry</div>
-  <div class="message-container">
-    Srry it's a no goal at this stage
-  </div>
-</body>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <p style="margin-top:20px; text-align:center;">
+        <a href="../index.html">
+        ← Return to Portfolio
+        </a> <!-- make sure above code snippet for a 'Return link' keeps placed at the bottom of the page's code and file saved to the server -->
+        </p> <!-- Edits ARE Error Prone if You grow into the habit of Accept many SUGGESTIONS at once FROM AI (edits require focus).
+       <!-- And, making simultaneous changes to multiple files by Copy&Pastes to THE CODE... -->
+        <!-- =>These type of bottom pg's codes may get erased accidentally -->
+    </body>
 </html>
