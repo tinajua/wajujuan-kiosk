@@ -90,7 +90,7 @@ ul li {
 .link-container {
     position: absolute;
     top: 20px; /* Adjust as needed */
-    right: 40px; /* Space from the right edge */
+    right: 20px; /* Space from the right edge */
     display: flex;
     flex-direction: column;
     gap: 10px; /* Spacing between links */
@@ -113,22 +113,33 @@ ul li {
     margin-top: 4px;
     display: block;
 }
-
-/* Be sure the #projects selector is outside h1 */
+/* Be sure the #projects selector is outside h1 or else it could mess the functionality */
 #projects {
     background-color: rgb(238, 221, 172);
     display: block;
     color: rgb(32, 93, 105);
     font-size: 20px; /* removed space between 20 and px */
 }
+.projects-title {
+    margin: 0 0 16px 0;
+    padding: 0 0 20px 16px;   /* same left padding as .projects-grid */
+    color: #111827;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px; /* spacing between boxes */
-    max-width: 960px;
-    margin: 0 auto;
+    /* grid-template-columns: repeat(2, 1fr); This could be removed if otherwise produces 2 columns */
+    grid-template-columns: repeat(2, max-content);
+    width: fit-content;
+    margin: 0;
+    column-gap: 50px; /* spacing between boxes */
+    row-gap: 24px;
+    justify-content: start; /* max-width: 640px; */
     margin-bottom: 0px; /* 👈 Add or reduce this value */
     padding: 20px;
+    box-shadow: none; /* Remove box shadow, because 'panel' has it; */
+    border-radius: 0.75rem; /* Does this border-style give the appearance of one unified glass card behind all? */
 }
 .projects-grid a img {
     width: 100%;
@@ -139,6 +150,24 @@ ul li {
 }
 .projects-grid a img:hover {
     transform: scale(1.05);
+}
+@media (min-width: 900px) {
+    .projects-panel { /* The idea here is to use a media query to adjust the panel's margin on desktop only. */
+        margin-left: 5%;
+        margin-right: auto;
+    } /* Phones: the panel stays centered. */
+    // 💻 Desktop: the panel is nudged slightly left, if you prefer that visual balance.
+}
+.projects-panel {
+    width: min(600px, 95%); /* Key line (in case of phone): shrinks to 95% of the screen width */
+    min-height: 500px;
+    margin: 1rem auto;
+    column-gap: 12px;
+    padding: 20px; /* Below values match the web-pg's background color (55, 65, 81) and opacity (0.45) */
+    background: rgba(55, 65, 81, 0.45);
+    backdrop-filter: blur(2px);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 /* 👈 Here ends style defs for landing page styles for projec "icons"  */
 /* Below is contact.html related that gives its form a clean layout w/o affecting the rest of site. */

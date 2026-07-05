@@ -8,9 +8,9 @@ function initGreeting() {
   } else if (now.getHours() < 9) {
     dtString = "Good morning!";
   } else if (now.getHours() < 17) {
-    dtString = "No surfing during working hours";
+    dtString = "No surfing when you design.";
   } else {
-    dtString = "Good Evening!";
+    dtString = "Good Evening! Now relax...";
   }
   document.getElementById("dateField").innerHTML = dtString;
   document.getElementById("dateField").style.color = "#ff0099";
