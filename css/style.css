@@ -170,6 +170,21 @@ ul li {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 /* 👈 Here ends style defs for landing page styles for projec "icons"  */
+/* My skills icons get defined from sub directory /icons contained .svg files */
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 1rem;
+}
+.skills-icons img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.2s ease;
+}
+.skills-icons img:hover {
+    transform: scale(1.15);
+}
 /* Below is contact.html related that gives its form a clean layout w/o affecting the rest of site. */
 #contact {
     max-width: 700px;

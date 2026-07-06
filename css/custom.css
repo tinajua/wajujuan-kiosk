@@ -85,7 +85,8 @@ p.footnote {
     margin-left: 38px; /* set the margin  for lists in projects _here_ */
 }
 .indented-list {
-    padding-left: 30px !important; /* this margin set has a slight effect */
+    margin-left: 5%;
+    padding-left: 1.5em;
 }
 .text-section li {
     margin-bottom: 0.5rem;
