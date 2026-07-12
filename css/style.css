@@ -1,5 +1,5 @@
 body {
-    background: url("../assets/ftm4.png"); /* Adjust path as needed */
+    background: url("../assets/ftm4.png"); /* Path is as intended and works */
     background-size: cover; /* Scales image to cover the entire viewport */
     background-repeat: no-repeat; /* Prevents tiling */
     background-position: center; /* Centers the image */
@@ -9,25 +9,25 @@ body {
     height: 100vh; /* Ensures full viewport height */
 }
 p {
-    margin-top: 0px; /* or even 0 */
+    margin-top: 0px; /* saving space keeping it at 0 */
 }
 /*----------- Intro Section ------------*/
 .intro {
     color: rgb(253, 139, 81);
     background-color: rgb(32, 93, 105);
-    margin: auto; /* margin-top: 10%; */
-    padding-top: 10vh; /* instead of margin-top */
-    width: 50%;
-    min-height: 40vh;
-    height: auto;
+    margin: auto; /* margin-top (could be) 10%; */
+    padding-top: 10vh; /* padding instead of 'margin-top' */
+    width: 50%; /* article-like content for keeping Intro short */
+    min-height: 40vh; /* no idea how height fits on mobiles' screen?*/
+    height: auto; /* Intro shuold display as intended on PC Browsers*/
 }
-@media (max-width: 600px) {
-    .intro {
+@media (max-width: 600px) { /* This is meant for adjusting to contents for mobile screens... if in use */
+    .intro {            /* The idea: IF browser width <= 600px THEN apply these extra CSS rules ENDIF  */
         height: auto;
         padding-bottom: 2rem;
-    }
+    } /* Note from above two lines that Everything else keeps coming from the original .intro rule */
 }
-.consent-container {
+.consent-container { /* This style is for that Check-box, a simple consent form element: */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -48,7 +48,7 @@ h1 {
     font-size: 14px; /* to 16 px or set even smaller */
 }
 #result {
-    color: #fb923c; /* test to see if this-light-Orange instead of Ivory shows better on green Bckgrnd */
+    color: #fb923c; /* This-light-Orange (instead of Ivory was proven to show better on green Bckgrnd */
     font-size: 1.2rem; /* that's when font-size is around same as h2 */
     font-weight: bold;
 }
@@ -76,7 +76,7 @@ ul {
 ul li {
     margin-right: 20px;
 }
-/* styles a Menu-icon chosen from FA bars class (for its check-box & text for the user's readable understanding */
+/* styles a Menu-icon chosen from FA bars class (this rule for its Check-box & text for the user's readable understanding */
 .checkbtn {
     font-size: 14px;
     color: #444; /* this is greyish color */
@@ -113,7 +113,7 @@ ul li {
     margin-top: 4px;
     display: block;
 }
-/* Be sure the #projects selector is outside h1 or else it could mess the functionality */
+// Be sure the #projects selector is outside h1 or else it could mess the functionality
 #projects {
     background-color: rgb(238, 221, 172);
     display: block;
@@ -169,20 +169,23 @@ ul li {
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
-/* 👈 Here ends style defs for landing page styles for projec "icons"  */
-/* My skills icons get defined from sub directory /icons contained .svg files */
+/* 👈 Here ends style rules def'd for landing page styles for projects' "icons"  */
+/* My Skills icons get defined from sub directory /icons contained .svg files */
 .skills-icons {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 1rem;
-}
+} /* Handle pointer cursor for the icon that's an active link (the GitHub icon) */
+.skills-icons a img{
+    cursor:pointer;
+} /* Here sizes are adjusted and the idea of transform is to scale the icon up slightly on hover */
 .skills-icons img {
     width: 36px;
     height: 36px;
     transition: transform 0.2s ease;
-}
-.skills-icons img:hover {
+} /* From the icons only the last one is styled w/ hover effect (the GitHub icon) */
+.skills-icons a:hover img {
     transform: scale(1.15);
 }
 /* Below is contact.html related that gives its form a clean layout w/o affecting the rest of site. */
@@ -202,3 +205,7 @@ ul li {
     padding: 12px 20px;
     cursor: pointer;
 }
+// About above rule: #contact button {...  It's a pointer cursor for the submit button to indicate it's clickable
+// This same rule got into good use in other rules as well: .checkbtn & .skills-icons rules (menu, consent, and submit buttons)
+// Other ways than css, alternate way buttons can be created. For instance in React apps (as component):
+// In such, a .js file has this line: export default SubmitButton; And, Event Handler in the way to handle button clicks.
